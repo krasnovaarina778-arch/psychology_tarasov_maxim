@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============================================================
+       SEO. ВЛАДЕЛЬЦУ: замените данные в [скобках] на реальные.
+       ============================================================ -->
+  <title>Тарасов Максим — психолог, Москва / онлайн</title>
+  <meta name="description" content="Психологическое консультирование: онлайн и очно в Москве. Бережная работа с тревогой, отношениями, самооценкой и жизненными переменами. Запись на консультацию.">
+  <meta name="theme-color" content="#F7F4EF">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Тарасов Максим — психолог, Москва / онлайн">
+  <meta property="og:description" content="Можно не справляться со всем в одиночку. Психологическое консультирование, запись онлайн.">
+  <!-- Когда появится домен и картинка для соцсетей, добавьте:
+       <meta property="og:url" content="https://ваш-домен.ru/">
+       <meta property="og:image" content="https://ваш-домен.ru/assets/og.jpg"> -->
+
+  <!-- Favicon: встроенный SVG, чтобы не было битой ссылки. Замените на свой файл при желании. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F7F4EF'/%3E%3Cpath d='M16 52V30a16 16 0 0 1 32 0v22z' fill='%237D8D7B'/%3E%3Ccircle cx='42' cy='20' r='6' fill='%23B99D8A'/%3E%3C/svg%3E">
+
+  <!-- Шрифты: Cormorant Garamond (заголовки) + Manrope (текст). Оба поддерживают кириллицу.
+       Если интернета нет, сайт покажет запасные шрифты (Georgia / системный sans-serif). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap&subset=cyrillic">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Класс "js" включает стили, которым нужен JavaScript (мобильное меню). Без JS сайт остаётся читаемым. -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <!-- ===================== ШАПКА ===================== -->
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Тарасов Максим, психолог — в начало страницы">
+        <span class="logo__name">Тарасов Максим</span>
+        <!-- ВЛАДЕЛЬЦУ: «психолог» или «психолог-консультант» — только если это соответствует вашей квалификации -->
+        <span class="logo__role">психолог</span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">Обо мне</a></li>
+          <li><a class="nav__link" href="#topics">С чем работаю</a></li>
+          <li><a class="nav__link" href="#format">Формат работы</a></li>
+          <li><a class="nav__link" href="#education">Образование</a></li>
+          <li><a class="nav__link" href="#faq">FAQ</a></li>
+          <li class="nav__cta-mobile"><a class="btn btn--primary btn--block" href="#booking" data-cta>Записаться на консультацию</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary header__cta" href="#booking" data-cta>Записаться на консультацию</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <span class="menu-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <!-- ВЛАДЕЛЬЦУ: замените надстрочный текст на корректное описание практики -->
+          <p class="hero__kicker">Психологическое консультирование</p>
+          <h1 class="hero__title" id="hero-title">Можно не справляться со всем в одиночку</h1>
+          <!-- ВЛАДЕЛЬЦУ: подтвердите или перепишите подзаголовок -->
+          <p class="hero__lead">Помогаю бережно исследовать чувства, разобраться в повторяющихся ситуациях и искать новые способы поддерживать себя.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#booking" data-cta>Записаться на консультацию</a>
+            <a class="link-arrow" href="#process">Узнать, как проходит встреча</a>
+          </div>
+
+                    <p class="hero__format">Онлайн / очно в Москве</p>
+        </div>
+
+        <figure class="portrait hero__portrait">
+          <!-- Иллюстрация в первом экране: assets/psychology1.webp (1080×1350). Загружается сразу, без lazy. -->
+          <div class="portrait__frame">
+            <img src="assets/psychology1.webp" width="1080" height="1350" alt="Иллюстрация: двое людей идут по траве, держась за руки" fetchpriority="high">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== БЛОК ДОВЕРИЯ ===================== -->
+    <!-- ВЛАДЕЛЬЦУ: никаких цифр стажа, числа клиентов и рейтингов без подтверждения -->
+    <section class="facts" aria-label="Коротко о специалисте">
+      <div class="container">
+        <dl class="facts__list">
+          <div class="facts__item">
+            <dt>Образование</dt>
+            <dd>МГППУ — направление «Психология»</dd>
+          </div>
+          <div class="facts__item">
+            <dt>Направления работы</dt>
+            <dd>Психологическое консультирование, эмоциональные трудности, стресс и тревожность, самооценка, личные границы, отношения с близкими и поиск внутренних ресурсов</dd>
+          </div>
+          <div class="facts__item">
+            <dt>Формат консультаций</dt>
+            <dd>Онлайн и очно. Продолжительность сессии — 50–60 минут</dd>
+          </div>
+          <div class="facts__item">
+            <dt>Язык и город</dt>
+            <dd>Русский, английский, французский. Москва</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== ОБО МНЕ ===================== -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <figure class="portrait about__portrait">
+          <!-- Портрет специалиста: assets/portrait.webp (736×980) -->
+          <div class="portrait__frame portrait__frame--soft">
+            <img src="assets/portrait.webp" width="736" height="980" alt="Тарасов Максим, психолог-консультант" loading="lazy">
+          </div>
+        </figure>
+
+        <div class="about__text">
+          <h2 class="section__title" id="about-title">Обо мне</h2>
+          <!-- ВЛАДЕЛЬЦУ: перепишите от своего лица, 2–4 коротких абзаца. Не утверждайте, что лечите заболевания, если это не соответствует вашей квалификации. -->
+          <p>Я — Тарасов Максим Ильич, психолог-консультант. Помогаю людям лучше понимать свои эмоции, разбираться в сложных жизненных ситуациях и находить индивидуальные способы справляться с внутренними переживаниями.</p>
+          <p>В работе для меня важны уважение к вашему опыту, ясность и возможность двигаться в комфортном темпе. Мы будем вместе исследовать то, что происходит, и искать подходящие вам способы справляться с трудностями.</p>
+          <p>Работаю с темами: тревожность и стресс, самооценка, личные границы, трудности в отношениях, эмоциональное напряжение и жизненные перемены.</p>
+          <p class="about__note">Психологическое консультирование не является лечением и не заменяет помощь врача.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== С ЧЕМ МОЖНО ОБРАТИТЬСЯ ===================== -->
+    <!-- ВЛАДЕЛЬЦУ: это примеры тем, а не диагнозы. Оставьте только то, с чем вы работаете. -->
+    <section class="section section--tint topics" id="topics" aria-labelledby="topics-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" id="topics-title">С чем можно обратиться</h2>
+          <p class="section__lead">Не обязательно точно формулировать запрос заранее — можно начать с того, что беспокоит сейчас.</p>
+        </div>
+
+        <div class="topics__grid">
+          <article class="topic topic--sage">
+            <h3 class="topic__title">Тревога и напряжение</h3>
+            <p>Сложно расслабиться, мысли постоянно возвращаются к проблеме.</p>
+          </article>
+          <article class="topic topic--clay">
+            <h3 class="topic__title">Отношения и личные границы</h3>
+            <p>Трудно говорить о своих желаниях, повторяются похожие конфликты.</p>
+          </article>
+          <article class="topic topic--clay">
+            <h3 class="topic__title">Самооценка и внутренний критик</h3>
+            <p>Сложно признавать свои достижения, много самокритики.</p>
+          </article>
+          <article class="topic topic--sage">
+            <h3 class="topic__title">Перемены и поиск себя</h3>
+            <p>Неопределённость, выбор, адаптация к новому этапу.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ФОРМАТ РАБОТЫ: процесс + услуги ===================== -->
+    <section class="section" id="format" aria-labelledby="format-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" id="format-title">Формат работы</h2>
+          <p class="section__lead">Процесс и темп индивидуальны: количество встреч зависит от вашего запроса и обстоятельств, и заранее я его не обещаю.</p>
+        </div>
+
+        <!-- Как проходит консультация. Здесь нумерация уместна: это реальная последовательность. -->
+        <div class="process" id="process">
+          <h3 class="process__heading">Как проходит консультация</h3>
+          <ol class="process__list">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">1</span>
+              <h4 class="step__title">Знакомство</h4>
+              <p>Уточняем, что привело вас на встречу и чего хотелось бы достичь.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">2</span>
+              <h4 class="step__title">Исследование запроса</h4>
+              <p>Обсуждаем ситуации, чувства и повторяющиеся трудности.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">3</span>
+              <h4 class="step__title">Совместная работа</h4>
+              <p>Определяем возможные направления и дальнейшие шаги.</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Услуги и стоимость. ВЛАДЕЛЬЦУ: оставьте только подтверждённые форматы; без скидок, таймеров и «дефицита». -->
+        <div class="services" id="services">
+          <h3 class="services__heading">Услуги и стоимость</h3>
+          <div class="services__grid">
+            <article class="service">
+              <h4 class="service__title">Индивидуальная консультация</h4>
+              <dl class="service__details">
+                <div><dt>Формат</dt><dd>Онлайн / очно в Москве</dd></div>
+                <div><dt>Длительность</dt><dd>50 минут</dd></div>
+                <div><dt>Стоимость</dt><dd>3&nbsp;500&nbsp;₽</dd></div>
+              </dl>
+              <a class="btn btn--outline btn--block" href="#booking" data-cta data-service="Индивидуальная консультация">Выбрать консультацию</a>
+            </article>
+
+            <!-- Показывайте карточку «Первая встреча» только если это отдельная услуга; иначе удалите весь <article> -->
+            <article class="service">
+              <h4 class="service__title">Первая встреча</h4>
+              <dl class="service__details">
+                <div class="service__row--stack"><dt>Описание</dt><dd>Знакомство, обсуждение вашего запроса <br> и ожиданий от работы.</dd></div>
+                <div><dt>Длительность</dt><dd>50 минут</dd></div>
+                <div><dt>Стоимость</dt><dd>2&nbsp;500&nbsp;₽</dd></div>
+              </dl>
+              <a class="btn btn--outline btn--block" href="#booking" data-cta data-service="Первая встреча">Уточнить детали</a>
+            </article>
+          </div>
+          <p class="services__policy"><strong>Перенос и отмена:</strong> Пожалуйста, сообщите о переносе или отмене не менее чем за 24 часа до назначенной встречи. Для этого напишите специалисту по контактам, указанным на сайте. При более поздней отмене условия оплаты согласовываются заранее.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ОБРАЗОВАНИЕ ===================== -->
+    <!-- Данные предоставлены владельцем. Перед публикацией проверьте их по документам. Название учебного центра переподготовки при желании укажите явно. -->
+    <section class="section section--tint education" id="education" aria-labelledby="education-title">
+      <div class="container education__grid">
+        <div class="education__intro">
+          <h2 class="section__title" id="education-title">Образование и профессиональный подход</h2>
+          <p class="section__lead">Только то, что можно подтвердить документами.</p>
+        </div>
+
+        <ul class="education__list">
+          <li class="edu-item">
+            <span class="edu-item__year">2018–2022</span>
+            <div>
+              <h3 class="edu-item__title">Московский государственный психолого-педагогический университет (МГППУ)</h3>
+              <p>Направление: психология. Базовое образование в области психологии, изучение психологических закономерностей, эмоциональных процессов и особенностей поведения человека.</p>
+            </div>
+          </li>
+          <li class="edu-item">
+            <span class="edu-item__year">2023</span>
+            <div>
+              <h3 class="edu-item__title">Профессиональная переподготовка по психологическому консультированию</h3>
+              <p>Учебный центр дополнительного профессионального образования. Изучение методов консультирования, построения контакта с клиентом, работы с эмоциональными трудностями и профессиональной этики.</p>
+            </div>
+          </li>
+          <li class="edu-item">
+            <span class="edu-item__year">2024–2025</span>
+            <div>
+              <h3 class="edu-item__title">Супервизия и профессиональное развитие</h3>
+              <p>Участие в профессиональных разборах консультативных случаев, развитие навыков взаимодействия с клиентами и совершенствование практики психологического консультирования.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--
+      ОТЗЫВЫ (необязательный блок по ТЗ п. 7.9) — намеренно не добавлены.
+      Добавляйте только реальные отзывы с письменным разрешением на публикацию и без личных подробностей.
+    -->
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div class="faq__intro">
+          <h2 class="section__title" id="faq-title">Частые вопросы</h2>
+          <p class="section__lead">Если вы не нашли ответ, напишите — отвечу при записи.</p>
+        </div>
+
+        <!-- Нативные <details>: работают с клавиатуры и без JavaScript -->
+        <div class="faq__list">
+          <details class="faq-item">
+            <summary>Что, если я не знаю, с чего начать?</summary>
+            <p>Это нормальная ситуация. Чётко сформулированный запрос не нужен: на первой встрече мы вместе поговорим о том, что беспокоит вас сейчас.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Как проходит первая консультация?</summary>
+            <p>Мы знакомимся, вы рассказываете, что привело вас и чего хотелось бы, а я объясняю, как устроена работа. Вы сами решаете, насколько подробно рассказывать. Первая встреча длится 50 минут и стоит 2&nbsp;500&nbsp;₽.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Можно ли заниматься онлайн?</summary>
+            <p>Да, консультации проходят и онлайн, и очно в Москве. Для онлайн-встречи понадобятся стабильная связь и место, где вас не будут отвлекать. Платформа: <span class="ph">[укажите]</span>.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Сколько встреч потребуется?</summary>
+            <p>Это зависит от запроса, обстоятельств и вашего темпа. Заранее число встреч я не обещаю — к этому вопросу мы вернёмся после первых консультаций.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Что делать, если мне сложно говорить о чувствах?</summary>
+            <p>Это встречается часто. Не нужно подбирать точные слова: можно говорить медленно, молчать или сказать «пока не знаю». Мы двигаемся в вашем темпе.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Как перенести или отменить встречу?</summary>
+            <p>Пожалуйста, сообщите о переносе или отмене не менее чем за 24 часа до назначенной встречи. Для этого напишите специалисту по контактам, указанным на сайте. При более поздней отмене условия оплаты согласовываются заранее.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Как обеспечивается конфиденциальность?</summary>
+            <p>Содержание наших разговоров не передаётся третьим лицам. Исключения, предусмотренные законом и профессиональной этикой: <span class="ph">[укажите]</span>. Данные из заявки используются только для связи с вами.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ФИНАЛЬНЫЙ CTA ===================== -->
+    <section class="final-cta" aria-labelledby="cta-title">
+      <div class="container final-cta__inner">
+        <h2 class="final-cta__title" id="cta-title">Вы можете начать с одного разговора</h2>
+        <p class="final-cta__text">Если вам откликается мой подход, напишите мне — обсудим ваш запрос и организационные вопросы.</p>
+        <a class="btn btn--light btn--lg" href="#booking" data-cta>Записаться на консультацию</a>
+      </div>
+    </section>
+
+    <!-- ===================== ЗАПИСЬ: ФОРМА ===================== -->
+    <section class="section booking" id="booking" aria-labelledby="booking-title">
+      <div class="container booking__grid">
+
+        <div class="booking__info">
+          <h2 class="section__title" id="booking-title">Запись на консультацию</h2>
+          <p class="section__lead">Оставьте минимум данных — я свяжусь с вами по выбранному способу.</p>
+
+          <div class="info-box">
+            <h3 class="info-box__title">Какие данные передаются</h3>
+            <p>Только имя, способ связи, контакт, формат и ваш комментарий (если он есть). Используются исключительно для ответа на заявку. Пожалуйста, не пишите в форме диагнозы и подробности личной истории — это можно обсудить на встрече.</p>
+          </div>
+
+          <div class="info-box">
+            <h3 class="info-box__title">Или свяжитесь напрямую</h3>
+            <!-- Список заполняется из CONFIG.contacts в script.js; пока там пусто, показывается заглушка -->
+            <ul class="contact-list" data-contact-list>
+              <li><span class="ph">[Telegram / WhatsApp / email / телефон — укажите в script.js, CONFIG.contacts]</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="form" id="booking-form" novalidate aria-labelledby="booking-title">
+          <!-- Режим работы формы (честное сообщение, заполняется скриптом) -->
+          <p class="form__mode" id="form-mode" role="note"></p>
+
+          <div class="form__error-summary" id="form-summary" role="alert" tabindex="-1" hidden></div>
+
+          <div class="field">
+            <label class="field__label" for="f-name">Ваше имя <span class="req" aria-hidden="true">*</span></label>
+            <input class="field__input" id="f-name" name="name" type="text" autocomplete="given-name" required aria-describedby="err-name" maxlength="80">
+            <p class="field__error" id="err-name" hidden></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="f-method">Удобный способ связи <span class="req" aria-hidden="true">*</span></label>
+            <select class="field__input" id="f-method" name="method" required aria-describedby="err-method">
+              <option value="">Выберите…</option>
+              <option value="telegram">Telegram</option>
+              <option value="whatsapp">WhatsApp</option>
+              <option value="phone">Телефон</option>
+              <option value="email">Email</option>
+            </select>
+            <p class="field__error" id="err-method" hidden></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="f-contact">Ваш контакт <span class="req" aria-hidden="true">*</span></label>
+            <input class="field__input" id="f-contact" name="contact" type="text" autocomplete="off" required aria-describedby="hint-contact err-contact" maxlength="120">
+            <p class="field__hint" id="hint-contact">Сначала выберите способ связи — подскажем формат.</p>
+            <p class="field__error" id="err-contact" hidden></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="f-format">Формат консультации</label>
+            <!-- ВЛАДЕЛЬЦУ: оставьте только актуальные варианты -->
+            <select class="field__input" id="f-format" name="format">
+              <option value="Пока не знаю">Пока не знаю</option>
+              <option value="Онлайн">Онлайн</option>
+              <option value="Очно">Очно</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="f-service">Что вас интересует</label>
+            <select class="field__input" id="f-service" name="service">
+              <option value="Не выбрано">Не выбрано</option>
+              <option value="Индивидуальная консультация">Индивидуальная консультация</option>
+              <option value="Первая встреча">Первая встреча</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="f-comment">Комментарий <span class="opt">(необязательно)</span></label>
+            <textarea class="field__input field__input--area" id="f-comment" name="comment" rows="3" maxlength="500" aria-describedby="hint-comment"></textarea>
+            <p class="field__hint" id="hint-comment">Например, удобное время. Подробности вашей ситуации писать не нужно.</p>
+          </div>
+
+          <div class="field field--check">
+            <input class="check" id="f-consent" name="consent" type="checkbox" required aria-describedby="err-consent">
+            <label class="check__label" for="f-consent">Я ознакомился(-лась) с <a href="#privacy">политикой обработки персональных данных</a> и даю согласие на обработку данных из этой формы <span class="req" aria-hidden="true">*</span></label>
+            <p class="field__error" id="err-consent" hidden></p>
+          </div>
+
+          <button class="btn btn--primary btn--lg btn--block form__submit" id="form-submit" type="submit">
+            <span class="form__submit-label">Записаться на консультацию</span>
+          </button>
+
+          <!-- Результат отправки / подготовки заявки -->
+          <div class="form__result" id="form-result" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== ПОДВАЛ ===================== -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <p class="footer__brand">Тарасов Максим</p>
+        <p class="footer__muted">Психолог, Москва / онлайн</p>
+        <!-- Адрес кабинета публикуйте, только если консультации очные и адрес можно показывать -->
+        <p class="footer__muted"><span class="ph">[Адрес кабинета — по желанию]</span></p>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__heading">Контакты для записи</p>
+        <ul class="contact-list contact-list--footer" data-contact-list>
+          <li><span class="ph">[Укажите контакты в script.js]</span></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__heading">Документы</p>
+        <ul class="footer__links">
+          <li><a href="#privacy">Политика обработки персональных данных</a></li>
+          <li><a href="#privacy">Согласие на обработку данных</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="footer__disclaimer">Сайт не предназначен для экстренной психологической или медицинской помощи. Если вы или кто-то рядом в опасности, немедленно обратитесь в экстренные службы: <span class="ph">[номер экстренной службы вашей страны]</span>.</p>
+
+      <!-- Заглушка для юридических текстов. ВЛАДЕЛЬЦУ: замените на текст политики, подготовленный с юристом
+           под законодательство вашей страны. Это шаблон, а не юридическая консультация. -->
+      <div class="privacy" id="privacy" tabindex="-1">
+        <h2 class="privacy__title">Политика обработки персональных данных</h2>
+        <p><span class="ph">[Вставьте текст политики и текст согласия: кто оператор данных, какие данные собираются, цель, срок хранения, права пользователя, контакт для обращений.]</span></p>
+      </div>
+
+      <p class="footer__copy">© <span data-year>2026</span> Тарасов Максим. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
